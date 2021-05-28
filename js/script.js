@@ -26,23 +26,9 @@ $(document).ready(function(){
     let secondNumber=$("#add2").val();
 
     let result=add(parseFloat(firstNumber),parseFloat(secondNumber));
-    alert(result);
+    $("#output").text(result);
   })
 })
-
-
-$(document).ready(function(){
-  $("#subtract").submit(function(event){
-    event.preventDefault();
-    
-    let firstNumber=$("#add1").val();
-    let secondNumber=$("#add2").val();
-
-    let result=subtract(parseFloat(firstNumber),parseFloat(secondNumber));
-    alert(result);
-  })
-})
-
-
+const calculate = $("input:radio[name=calculate]:checked").val();
 
 

@@ -5,6 +5,7 @@
   <link href= "css/bootstrap.css" rel= "stylesheet" type= "text/css">
   <link href= "css/styles.css" rel= "stylesheet" type= "text/css">
   <script src= "js/jquery-3.6.0.min.js"></script>
+
   <script src= "js/script.js"></script>
   <title>Arithmetic Calculator</title>
  </head>
@@ -24,12 +25,29 @@
         <input id="add2" class="form-control" type="text">
       </div>
 
-      <button type="submit" class="btn">Add!</button>
-      <button type="submit" class="btn">Subtract!</button>
-      <button type="submit" class="btn">Multiply!</button>
-      <button type="submit" class="btn">Divide!</button>
-      <button type="submit" class="btn">Remainder!</button>
+      <div class="radio">
+        <label>
+          <input type="radio" name="calculate" value="add" checked>
+          Add!
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="calculate" value="subtract">
+          Subtract!
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="calculate" value="multiply">
+          Multiply!
+        </label>
+        </div>
+        <button type="submit" class="btn">Calculate!</button>
     </form>
+    <div id="output">
+
+    </div>
   </div>
 </body>
 </html>
