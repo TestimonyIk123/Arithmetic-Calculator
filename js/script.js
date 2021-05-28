@@ -21,9 +21,28 @@ function remainer(number1, number2) {
 $(document).ready(function(){
   $("#add").submit(function(event){
     event.preventDefault();
+
     let firstNumber=$("#add1").val();
     let secondNumber=$("#add2").val();
+
     let result=add(parseFloat(firstNumber),parseFloat(secondNumber));
     alert(result);
   })
 })
+
+
+$(document).ready(function(){
+  $("#subtract").submit(function(event){
+    event.preventDefault();
+    
+    let firstNumber=$("#add1").val();
+    let secondNumber=$("#add2").val();
+
+    let result=subtract(parseFloat(firstNumber),parseFloat(secondNumber));
+    alert(result);
+  })
+})
+
+
+
+
