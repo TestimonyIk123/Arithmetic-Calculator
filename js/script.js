@@ -14,8 +14,8 @@ function divide(number1, number2) {
   return number1 / number2;
 }
 
-function remainder(number1, number2) {
-  return number1 % number2;
+function percentage(number1, number2) {
+  return number1 / number2;
 }
 
 $(document).ready(function(){
@@ -44,9 +44,9 @@ $(document).ready(function(){
       result=divide(parseFloat(firstNumber),parseFloat(secondNumber));
     }
     
-    else if(op==="remainder")
+    else if(op==="percentage")
     {
-      result=remainder(parseFloat(firstNumber),parseFloat(secondNumber));
+      result=percentage(parseFloat(firstNumber),parseFloat(secondNumber));
     }
     $("#output").text(result);
   })
